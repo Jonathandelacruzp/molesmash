@@ -14,23 +14,14 @@
             
             var lux = 29;
             /*Para que funcione en PC retirar estas lineas*/
-            window.ondevicelight = function (event) {
-                lux = event.value;
-            };
-            
-            navigator.requestWakeLock('screen')
             /*hasta aca */
             
             Mole = enchant.Class.create(Sprite, {
                 initialize: function () {
                     var game = enchant.Game.instance;
-                    Sprite.call(this, 60, 64);
+                    Sprite.call(this, 68, 60);
                     
-                    if (lux > 30){
-                        this.image = game.assets["mole.png"];
-                    }else{
-                        this.image = game.assets["mole-dark.png"];
-                    }
+                        this.image = game.assets["mole-dark2.png"];
                     
                     this.addEventListener("touchstart", function () {
                         this.scene.removeChild(this);
@@ -41,16 +32,20 @@
             Enemy = enchant.Class.create(Mole, {
                 initialize: function () {
                     Mole.call(this);
-                    this.frame = [4, 5, 6, 7];
-                    this.x = Math.random() * 410;
-                    this.y = Math.random() * 260;
-                    }
+                    this.frame = [0,1,2,3,4,5,4,3,2,1,0];
+                    var ram1 = Math.random();
+                    var ram2 = Math.random();
+                                        
+                    this.x = ram1 * 410;
+                    this.y = ram2 * 150 + 100;
+                    
+                }
             });
 
             window.onload = function () {
                 var game = new Game(480, 320);
-                game.fps = 10;
-                game.preload("mole.png", "farm.png", "mole-dark.png"); /* Precargar imagenes */
+                game.fps = 20;
+                game.preload("mole.png", "farm.png", "mole-dark2.png"); /* Precargar imagenes */
 
                 game.onload = function () {
                     var map = new Map(480, 320);
