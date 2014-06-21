@@ -1,0 +1,17 @@
+{
+  "name": "Mole Smash",
+  "description": "Juegasooooo",
+  "version": "0.3",
+  "icons": {
+    "66": "/img/icon-60.png",
+    "128": "/img/icon-128.png"
+  },
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Jonathan de La Cruz, Luis Canales"
+  },
+  "fullscreen": "true",
+  "orientation": [
+    "landscape-primary"
+  ]
+}
