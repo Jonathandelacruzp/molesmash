@@ -13,12 +13,13 @@
             enchant();
             
             var lux = 29;
-            
+            /*Para que funcione en PC retirar estas lineas*/
             window.ondevicelight = function (event) {
                 lux = event.value;
             };
             
             navigator.requestWakeLock('screen')
+            /*hasta aca */
             
             Mole = enchant.Class.create(Sprite, {
                 initialize: function () {
