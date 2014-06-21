@@ -23,7 +23,7 @@
             Mole = enchant.Class.create(Sprite, {
                 initialize: function () {
                     var game = enchant.Game.instance;
-                    Sprite.call(this, 82, 88);
+                    Sprite.call(this, 60, 64);
                     
                     if (lux > 30){
                         this.image = game.assets["mole.png"];
@@ -45,7 +45,6 @@
                     this.y = Math.random() * 260;
                     }
             });
-
 
             window.onload = function () {
                 var game = new Game(480, 320);
