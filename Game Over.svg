@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 12651 5356"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="1000" font-variant="normal" class="str0" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="8BIT WONDER">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="R" horiz-adv-x="1000"><path d="M834.335 0l-333.336 0 0 333 -166.666 0 0 -333 -333.332 0 0 833.001 750.001 0 0 -83.0006 83.333 0 0 -250.003 -83.333 0 0 -166.999 83.333 0 0 -333zm-333.336 499.998l0 166.001 -166.666 0 0 -166.001 166.666 0z"/></glyph>
+   <glyph unicode="A" horiz-adv-x="1000"><path d="M834.335 0l-333.336 0 0 333 -166.666 0 0 -333 -333.332 0 0 750.001 83.333 0 0 83.0006 666.668 0 0 -83.0006 83.333 0 0 -750.001zm-333.336 499.998l0 166.001 -166.666 0 0 -166.001 166.666 0z"/></glyph>
+   <glyph unicode="O" horiz-adv-x="1000"><path d="M834.335 83.333l-83.333 0 0 -83.333 -666.668 0 0 83.333 -83.333 0 0 666.668 83.333 0 0 83.0006 666.668 0 0 -83.0006 83.333 0 0 -666.668zm-333.336 83.6655l0 499.001 -166.666 0 0 -499.001 166.666 0z"/></glyph>
+   <glyph unicode="V" horiz-adv-x="1000"><path d="M834.335 83.333l-83.333 0 0 -83.333 -750.001 0 0 833.001 333.332 0 0 -666.003 166.666 0 0 666.003 333.336 0 0 -749.668z"/></glyph>
+   <glyph unicode="E" horiz-adv-x="1000"><path d="M834.335 0l-750.001 0 0 83.333 -83.333 0 0 666.668 83.333 0 0 83.0006 750.001 0 0 -167.002 -500.002 0 0 -166.001 249.999 0 0 -166.999 -249.999 0 0 -166.001 500.002 0 0 -166.999z"/></glyph>
+   <glyph unicode="M" horiz-adv-x="1499"><path d="M1334.33 0l-333.332 0 0 665.999 -166.666 0 0 -665.999 -333.336 0 0 665.999 -166.666 0 0 -665.999 -333.332 0 0 833.001 1250 0 0 -83.0006 83.333 0 0 -750.001z"/></glyph>
+   <glyph unicode="G" horiz-adv-x="1000"><path d="M834.335 0l-750.001 0 0 83.333 -83.333 0 0 666.668 83.333 0 0 83.0006 750.001 0 0 -167.002 -500.002 0 0 -499.001 166.666 0 0 166.001 -83.333 0 0 166.999 416.669 0 0 -499.998z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"8BIT WONDER";src:url("#FontID0") format(svg)}
+    .str0 {stroke-width:2.61}
+    .str1 {stroke:#FEFEFE;stroke-width:7.62}
+    .fil1 {fill:#A45E4D}
+    .fil0 {fill:#52658C}
+    .fnt0 {font-weight:normal;font-size:2917.81px;font-family:'8BIT WONDER'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <text x="1" y="2434"  class="fil0 str1 fnt0">GAME</text>
+  <text x="730" y="5352"  class="fil1 str1 fnt0">OVER</text>
+ </g>
+</svg>
