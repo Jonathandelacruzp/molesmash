@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 8Bits;
+  src: url(8bits.ttf);
+}
 html, body{
-    margin: 0;
-    padding: 0;
+   
+}
+p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10pt;
+    text-align: center;
 }
