@@ -37,7 +37,7 @@ Pit = Class.create(Sprite, {
 
     //Repeat the Mole's "appearing" animation
     tick: function () {
-        if (game.frame % 2 != 0) return; //Run every 3 frames
+        if (game.frame % 1 != 0) return; //Run every 3 frames
         switch (this.mode) {
         case 0: //Mole is appearing
             this.frame++;
@@ -69,16 +69,29 @@ Pit = Class.create(Sprite, {
                 //Reduce maximum amount of Moles
                 maxMole--;
 
-                if (maxMole <= 0) {
+                 if (maxMole <= 0) {
                     
-                    localStorage.setItem('Puntos', Puntos);
+                    var puntosMaximo = localStorage.getItem('PuntosMaximo');
 
+                    if (puntosMaximo) {
+                      
+                        if (Puntos > puntosMaximo) {
+                                localStorage.setItem('PuntosMaximo', Puntos);
+                                localStorage.setItem('PuntosActuales', Puntos);
+                            }
+                        
+                        else {
+                            localStorage.setItem('PuntosActuales', Puntos);
+                        }
+                    }
+                    else
+                        localStorage.setItem('PuntosMaximo', 0);
                     this.mode = 3;                    
                     if (maxMole <= -1 * totalMole + 1) {
                         game.end(scoreLabel.score, scoreLabel.text);                        
                     }
                     
-                    document.location.href = 'end.html';                    
+                    document.location.href = 'end.html';                 
                 }
             }
             break;
