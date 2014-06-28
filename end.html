@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <script> 
+        function loadData() {
+            var _account = localStorage.getItem('Puntos');
+            //Checks whether the stored data exists
+            if (_account) {
+                //Do what you need with the object
+                var score = _account;
+                document.getElementById('lblPuntaje').innerHTML = score;
+                //If you want to delete the object
+            }
+        }
+    </script>
+    <style type="text/css">
+        body {
+            margin: 0;
+              background: url(farm.png) no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+        }
+        @media all and (orientation: landscape) {
+                #end {
+                margin-top: 15%;
+                margin-left: 28%;
+                width:45%;
+            }
+        }
+        @media all and (orientation: portrait) {
+                #end {
+                margin-top:60%;
+                margin-left: 19.23%;
+                width:60%;
+            }
+        }  
+    </style>
+    <script>
+        function goGame()
+        {
+            document.location.href = 'start.html';
+        }
+    </script>
+    <title>MoleTopo</title>
+</head>    
+<body>
+    <img src="end.png" id="end" onload="loadData()" onClick="goGame()"/>
+    <div>
+        <p>Puntaje : </p> <p id="lblPuntaje"></p>
+    </div>    
+</body>
+
+</html>
