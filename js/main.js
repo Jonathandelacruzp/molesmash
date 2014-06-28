@@ -6,10 +6,12 @@ rand = function (n) {
 };
 
 //Maximum number of appearances of a single Mole
-maxMole = 30;
+maxMole = 50;
 
 //Total number of Moles
 totalMole = 24;
+
+var Puntos = 0;
 
 //Define a class for holes, extending the Sprite class
 Pit = Class.create(Sprite, {
@@ -35,7 +37,7 @@ Pit = Class.create(Sprite, {
 
     //Repeat the Mole's "appearing" animation
     tick: function () {
-        if (game.frame % 3 != 0) return; //Run every 3 frames
+        if (game.frame % 2 != 0) return; //Run every 3 frames
         switch (this.mode) {
         case 0: //Mole is appearing
             this.frame++;
@@ -68,10 +70,15 @@ Pit = Class.create(Sprite, {
                 maxMole--;
 
                 if (maxMole <= 0) {
-                    this.mode = 3;
+                    
+                    localStorage.setItem('Puntos', Puntos);
+
+                    this.mode = 3;                    
                     if (maxMole <= -1 * totalMole + 1) {
-                        game.end(scoreLabel.score, scoreLabel.text);
+                        game.end(scoreLabel.score, scoreLabel.text);                        
                     }
+                    
+                    document.location.href = 'end.html';                    
                 }
             }
             break;
@@ -117,6 +124,7 @@ ScoreLabel = Class.create(Label, {
     },
     add: function (pts) {
         this.score += pts;
+        Puntos += pts;
         this.text = "PUNTAJE:" + this.score;
     }
 });
