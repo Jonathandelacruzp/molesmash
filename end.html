@@ -10,14 +10,16 @@
     <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
     <script> 
         function loadData() {
-            var _account = localStorage.getItem('Puntos');
+            var punto = localStorage.getItem('PuntosActuales');
+            var maximo = localStorage.getItem('PuntosMaximo');
             //Checks whether the stored data exists
-            if (_account) {
+
                 //Do what you need with the object
-                var score = _account;
-                document.getElementById('lblPuntaje').innerHTML = score;
+                var score = punto;
+                document.getElementById('lblPuntajeMaximo').innerHTML = maximo;
+                document.getElementById('lblPuntaje').innerHTML = punto;
                 //If you want to delete the object
-            }
+            
         }
     </script>
     <style type="text/css">
@@ -53,9 +55,10 @@
     <title>MoleTopo</title>
 </head>    
 <body>
-    <img src="end.png" id="end" onload="loadData()" onClick="goGame()"/>
+    <img src="end.png" id="end" onload="loadData()"  onClick="goGame()"/>
     <div>
-        <p>Puntaje : </p> <p id="lblPuntaje"></p>
+        <p>Maximo Puntaje : </p> <p id="lblPuntajeMaximo"></p>
+        <p>Puntaje Actual : </p> <p id="lblPuntaje"></p>
     </div>    
 </body>
 
