@@ -1,14 +1,14 @@
 {
-  "name": "Mole Smash",
-  "description": "Juegasooooo",
-  "version": "0.3",
+  "name": "Mole",
+  "description": "Pon a Prueba tu destreza con los Topos!",
+  "version": "1.0",
   "icons": {
-    "66": "/img/icon-60.png",
+    "60": "/img/icon-60.png",
     "128": "/img/icon-128.png"
   },
   "launch_path": "/index.html",
   "developer": {
-    "name": "Jonathan de La Cruz, Luis Canales"
+    "name": "Jonathan de La Cruz, Luis Canales, Martin Guerrero, Julio De La Torre"
   },
   "fullscreen": "true",
   "orientation": [
